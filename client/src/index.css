@@ -1,6 +1,7 @@
 body {
   font-family: 'Fredoka', sans-serif;
-  justify-content: center;
+  /* justify-content: center;
+  display: flex; */
 }
 
 h1,
@@ -11,7 +12,15 @@ h5,
 h6 {
   font-family: 'Fredoka', sans-serif;
   font-weight: bold;
+  text-align: center;
+
 }
+.search {
+  justify-content: center;
+  flex-wrap: center;
+  
+}
+
 
 .small {
   font-weight: 300;
@@ -22,3 +31,4 @@ h6 {
   justify-content: center;
   text-align: center;
 }
+

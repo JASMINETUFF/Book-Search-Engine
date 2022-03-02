@@ -90,12 +90,13 @@ const SearchBooks = () => {
   };
   return (
     <>
-      <Jumbotron fluid className="text-light bg-dark">
-        <Container>
+      <Jumbotron fluid className="text-light bg-danger">
+        <Container className='container'>
           <h1>Search for Books!</h1>
-          <Form onSubmit={handleFormSubmit}>
-            <Form.Row>
-              <Col xs={12} md={8}>
+          
+          <Form onSubmit={handleFormSubmit} class="d-flex justify-content-center" >
+            <Form.Row >
+              <Col xs={12} md={5}>
                 <Form.Control
                   name="searchInput"
                   value={searchInput}
@@ -103,10 +104,10 @@ const SearchBooks = () => {
                   type="text"
                   size="lg"
                   placeholder="Search for a book"
-                />
+                  className="text-center"                />
               </Col>
               <Col xs={12} md={4}>
-                <Button type="submit" variant="success" size="lg">
+                <Button type="submit" variant="light" size="lg" className="text-center">
                   Submit Search
                 </Button>
               </Col>
